@@ -5,11 +5,11 @@
     export let description = ''
 </script>
 
-<div class="relative group card shadow-2xl col-span-2">
-  <img src={url} alt={name} class="object-cover h-full" />
+<div class="relative group card shadow-2xl col-span-1">
+  <img src={url} alt={name} class="object-contain" />
   <a href={`/projects/${slug}`}>
     <div
-      class="absolute bottom-0 left-0 right-0 lg:opacity-0 group-hover:opacity-100 bg-primary p-4 duration-300 text-primary-content"
+      class="p-5"
     >
       <h2 class="font-bold lg:text-xl">{name}</h2>
       <p class="text-sm lg:text-xl">

@@ -10,7 +10,11 @@
     </div>
   
     <div class="dropdown dropdown-left lg:hidden">
-      <div tabindex="0" class="m-1 btn">Links</div>
+      <div tabindex="0" class="m-1 btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current">           
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>               
+        </svg>
+      </div>
       <ul
         tabindex="0"
         class="bg-neutral rounded-box shadow text-neutral-content p-2 w-52 menu dropdown-content "

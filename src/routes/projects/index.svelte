@@ -22,12 +22,12 @@
     <title>Koen Raijer - projects</title>
   </svelte:head>
   
-  <h1 class="font-bold mb-20 text-center text-5xl">
-    Recent Projects by Me
+  <h1 class="font-bold mb-20 text-left text-5xl">
+    Projects
   </h1>
   
   <div
-    class="grid gap-10 md:grid-cols-4 md:px-10 lg:grid-cols-6 lg:-mx-52"
+    class="grid gap-10 md:grid-cols-1 md:px-10 lg:grid-cols-2 lg:-mx-52"
   >
     {#each projects as { name, slug, description, image }, index}
       <ProjectCard

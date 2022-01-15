@@ -26,14 +26,6 @@
     <title>Blog | {title}</title>
   </svelte:head>
 
-  <div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38 mb-5">
-    <img
-      class="rounded-xl"
-      src={coverImage.url}
-      alt={`Cover image for ${title}`}
-    />
-  </div>
-  
   <div class="prose prose-xl">
     <h1>{title}</h1>
   </div>
@@ -47,7 +39,7 @@
       {#if tags}
         <div class="mt-5 space-x-2">
           {#each tags as tag}
-            <span class="badge badge-primary">{tag}</span>
+          <span class="badge badge-outline rounded-lg py-3">{tag}</span>
           {/each}
         </div>
       {/if}
