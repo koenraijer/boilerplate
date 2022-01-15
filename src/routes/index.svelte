@@ -1,11 +1,12 @@
 <script context="module">
-    import {client} from '$lib/graphql-client'
+    import ProjectCard from '$lib/components/project-card.svelte'
+
     /* import gql, and {client} 
         - gql creates our query
         - the client takes our query and returns data inside of a const.
     */
-
-    import {gql, GraphQLClient} from 'graphql-request'
+    import {client} from '$lib/graphql-client'
+    import {gql} from 'graphql-request'
 
     export const load = async () => {
         // 1. Make a GraphQL query to define the data needed.
@@ -40,4 +41,8 @@
     export let projects
 </script>
 
-<pre>{JSON.stringify(projects, null, 2)}</pre>
+<h1>Recent projects</h1>
+
+{#each projects as { name, slug, description, image }}
+    <ProjectCard {name} {description} url={image[0].url} {slug} />
+{/each}
