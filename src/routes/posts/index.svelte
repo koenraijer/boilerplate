@@ -23,8 +23,12 @@
     <title>Koen Raijer | Blog</title>
   </svelte:head>
 
-  <h1 class="text-5xl mb-10 font-extrabold">All posts</h1>
-
-{#each posts as { title, slug, content, coverImage, tags }}
+  <h1 class="font-bold mb-20 text-left text-5xl">
+    Posts
+  </h1>
+  
+<div class="grid gap-10 md:grid-cols-1 md:px-10 lg:grid-cols-2">
+  {#each posts as { title, slug, content, coverImage, tags }}
   <BlogCard url={coverImage.url} {title} {content} {tags} {slug}/>
-{/each}
+  {/each}
+</div>

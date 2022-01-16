@@ -2,3 +2,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/* If synthwave */
+:root[data-theme="synthwave"] .dark-hidden {
+    display: none;
+}
+
+:root[data-theme="synthwave"] .light-hidden {
+    display: none;
+}
+
+:root[data-theme="synthwave"] .dark-hidden {
+    display: block;
+}
+
+/* If dracula */
+:root[data-theme="dracula"] .dark-hidden {
+    display: none;
+}
+
+:root[data-theme="dracula"] .synth-hidden {
+    display: none;
+}
+
+:root[data-theme="dracula"] .light-hidden {
+    display: block;
+}
+
+

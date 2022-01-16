@@ -1,5 +1,6 @@
 <script context="module">
     import BlogCard from '$lib/components/blog-card.svelte'
+    import Hero from '$lib/components/hero.svelte'
 
     /* import gql, and {client} 
         - gql creates our query
@@ -41,23 +42,13 @@
 </svelte:head>
 
 {#each authors as {name, intro, picture: {url} }}
-    <div class="hero mb-20">
-        <div class="flex-col hero-content lg:flex-row-reverse">
-            <img src={url} alt={name} class="max-w-xs mask mask-squircle"> 
-            <div>
-                <h1 class="mb-5 text-5xl font-bold">
-                    Hey, I'm Koen
-                    </h1> 
-                <p class="mb-5">{intro}</p> 
-                <a href="/projects" class="btn btn-primary">Portfolio</a>
-                <a href="/contact" class="btn btn-primary ml-5">Contact</a>
-            </div>
-        </div>
-    </div>
+    <Hero {name} {intro} {url}/>
 {/each}
 
 <h1 class="font-bold text-lef mb-10 text-4xl">Latest posts</h1>
 
-{#each posts as { title, slug, content, coverImage, tags }}
-    <BlogCard url={coverImage.url} {title} {content} {tags} {slug}/>
-{/each}
+<div class="grid gap-10 md:grid-cols-1 md:px-10 lg:grid-cols-2">
+    {#each posts as { title, slug, content, coverImage, tags }}
+        <BlogCard url={coverImage.url} {title} {content} {tags} {slug}/>
+    {/each}
+</div>

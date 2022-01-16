@@ -26,12 +26,13 @@
     <title>Blog | {title}</title>
   </svelte:head>
 
+<section class="max-w-[80ch] mx-auto">
   <div class="prose prose-xl">
     <h1>{title}</h1>
   </div>
   
-  <p class="text-secondary text-xs tracking-widest font-semibold">
-    {new Date(date).toDateString()}
+  <p class="text-secondary text-xs tracking-widest font-semibold pt-1">
+      {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
   </p>
   
   <div class="mb-5 flex justify-between">
@@ -49,3 +50,4 @@
   <article div class="prose prose-lg">
     {@html marked(content)}
   </article>
+</section>

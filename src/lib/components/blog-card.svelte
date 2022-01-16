@@ -8,17 +8,17 @@
     export let slug = ''
 </script>
 
-<a href={`/posts/${slug}`} class="group block">
-    <div class="card text-center shadow-2xl mb-20 group-hover:scale-101 transition duration-1000ms ease-in-out transform-gpu">
+<a href={`/posts/${slug}`} class="grid place-items-center group col-span-1">
+    <div class="card text-center max-h-xl max-w-4xl shadow-2xl mb-20 group-hover:scale-101 transition ease-in-out transform-gpu">
         <figure class="h-40 overflow-hidden">
             <img
-            class="object-contain h-100"
+            class="object-contain w-100"
             src={url}
             alt={`Cover image for ${title}`}
             />
         </figure>
     <div class="card-body prose">
-    <h2 class="title">{title}</h2>
+    <h2 class="title text-3xl group-hover:text-primary">{title}</h2>
     {@html marked(content).slice(0, 150)}
     <div class="flex justify-center mt-5 space-x-2">
         {#each tags as tag}

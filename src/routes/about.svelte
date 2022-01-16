@@ -15,6 +15,7 @@
   </script>
   
   <script>
+    import Hero from '$lib/components/hero.svelte'
     export let authors
     const {
       name,
@@ -28,19 +29,8 @@
     <title>My Portfolio project | About {name}</title>
   </svelte:head>
   
-  <div class="hero mb-20">
-      <div class="flex-col hero-content lg:flex-row-reverse">
-          <img src={url} alt={name} class="max-w-xs mask mask-squircle"> 
-          <div>
-              <h1 class="mb-5 text-5xl font-bold">
-                  Hey, I'm Koen
-                  </h1> 
-              <p class="mb-5">{intro}</p> 
-              <button class="btn btn-primary">See what I've made</button>
-          </div>
-      </div>
-  </div>
+  <Hero {name} {intro} {url}/>
   
-  <article div class="prose prose-lg">
+  <article div class="prose prose-lg max-w-[80ch] mx-auto">
     {@html marked(bio)}
   </article>

@@ -24,14 +24,15 @@
   <title>Koen codes | {project.name}</title>
 </svelte:head>
 
-<div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38 mb-5">
+<div class="max-w-[80ch] mx-auto">
+  <div class="h-auto mb-5">
+    
     <img
-      class="rounded-lg"
+      class="rounded-lg object-contain"
       src={project.image[0].url}
       alt={project.title}
     />
   </div>
-  
   <h1 class="text-4xl font-semibold mb-5">{project.name}</h1>
   
   <div class="mb-5 flex justify-between">
@@ -39,7 +40,7 @@
       {#if project.tags}
         {#each project.tags as tag}
           <span
-            class="badge badge-primary mr-2 hover:bg-primary-focus cursor-pointer"
+            class="badge badge-primary mr-2"
             >{tag}</span
           >
         {/each}
@@ -57,3 +58,14 @@
   <article class="prose prose-xl">
     {@html marked(project.description)}
   </article>
+
+  {#each project.image as image}
+  <div class="h-auto mb-5">
+    <img
+      class="rounded-lg object-contain"
+      src={image.url}
+      alt={project.title}
+    />
+  </div>
+  {/each}
+  </div>
