@@ -26,7 +26,7 @@
   </script>
   
   <svelte:head>
-    <title>My Portfolio project | About {name}</title>
+    <title>About {name}</title>
   </svelte:head>
   
   <Hero {name} {intro} {url}/>

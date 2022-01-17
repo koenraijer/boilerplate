@@ -19,7 +19,7 @@
   </script>
   
   <svelte:head>
-    <title>Koen Raijer - projects</title>
+    <title>Projects | Koen Raijer</title>
   </svelte:head>
   
   <h1 class="font-bold mb-20 text-left text-5xl">
@@ -27,7 +27,7 @@
   </h1>
   
   <div
-    class="grid gap-10 md:grid-cols-1 md:px-10 lg:grid-cols-2"
+    class=" h-fit overscroll-none grid gap-10 md:grid-cols-1 md:px-10 lg:grid-cols-2 min-h-screen"
   >
     {#each projects as { name, slug, description, image, type }, index}
       <ProjectCard

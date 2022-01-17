@@ -4,12 +4,17 @@
 (https://github.com/maciekgrzybek/svelte-inview)
 - Use GraphCMS for form handling and add contact section (https://graphcms.com/blog/forms-and-submissions-with-nextjs-and-graphql#2-create-the-models-in-graphcms)
 - Add click to copy
-- Add figcaption
 - a11ty
 - Add subtle filter in theme color over hero image
-- Revert body font to regular 'sans' stack, only Raleway for headers.
+- Maximize image width in posts
 
 **Later**
 - Search option for blogs
 - Dutch language switch for web design services 
 - Create separate landing page for web design
+
+
+## Added
+- Revert body font to regular 'sans' stack, use Raleway for headers.
+- Thicken up hero title and add blue gradient to it.
+- Add figcaptions

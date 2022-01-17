@@ -23,7 +23,7 @@
   </script>
   
   <svelte:head>
-    <title>Blog | {title}</title>
+    <title>{title} | Koen Raijer</title>
   </svelte:head>
 
 <section class="container max-w-[80ch] max-w-5xl mx-auto">

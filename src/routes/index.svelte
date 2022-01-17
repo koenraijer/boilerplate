@@ -38,7 +38,7 @@
 </script>
 
 <svelte:head>
-    <title>Koen codes</title>
+    <title>Koen Raijer | Personal website, blog and portfolio.</title>
 </svelte:head>
 
 {#each authors as {name, intro, picture: {url} }}

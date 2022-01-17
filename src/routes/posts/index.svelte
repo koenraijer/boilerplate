@@ -20,7 +20,7 @@
   </script>
   
   <svelte:head>
-    <title>Koen Raijer | Blog</title>
+    <title>Blog | Koen Raijer</title>
   </svelte:head>
 
   <h1 class="font-bold mb-20 text-left text-5xl">

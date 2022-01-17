@@ -24,15 +24,18 @@
   <title>Koen codes | {project.name}</title>
 </svelte:head>
 
-<div class="max-w-[80ch] relative lg:max-w-5xl mx-auto lg:grid grid-cols-4">
+<div class="max-w-[80ch] relative lg:-mt-5 lg:max-w-5xl mx-auto lg:grid grid-cols-4">
     <div class="h-auto mb-5 col-span-3">
       {#each project.image as image}
         <div class="h-auto mb-5">
-          <img
+          <figure>
+            <img
             class="rounded-lg object-contain"
             src={image.url}
             alt={project.title}
           />
+          </figure>
+          
         </div>
       {/each}
     </div>

@@ -1,5 +1,5 @@
 /* Font imports */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
 
 /* Write your global styles here, in PostCSS syntax */
 @tailwind base;
@@ -7,31 +7,64 @@
 @tailwind utilities;
 
 
-
-/* If synthwave */
-:root[data-theme="synthwave"] .dark-hidden {
-    display: none;
+h1, h2, h3, h4, h5, h6 {
+    @apply font-header;
 }
 
-:root[data-theme="synthwave"] .light-hidden {
-    display: none;
+@layer utilities {
+    :root[data-theme="dark"] .hero-h1 {
+        background: linear-gradient(90deg, #ffffff 0%, #e4f7f4 16%, #c8efe9 33%, #abe7de 50%, #8bded3 66%, #68d6c9 83%, #37cdbe 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
+
+    :root[data-theme="light"] .hero-h1 {
+        background: linear-gradient(30deg, #b3e7f9 0%, #a6e2f8 16%, #99dcf7 33%, #8bd7f6 50%, #7cd2f5 66%, #6bccf4 83%, #58c7f3 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
+
+    :root[data-theme="dark"] .hero-img:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+    }
+
+    :root[data-theme="light"] .hero-img {
+
+    }
 }
 
-:root[data-theme="synthwave"] .dark-hidden {
-    display: block;
-}
+/* Theming */
 
-/* If dracula */
-:root[data-theme="dracula"] .dark-hidden {
-    display: none;
-}
+    /* If dark */
+    :root[data-theme="dark"] .dark-hidden {
+        display: none;
+    }
 
-:root[data-theme="dracula"] .synth-hidden {
-    display: none;
-}
+    :root[data-theme="dark"] .light-hidden {
+        display: block;
+    }
 
-:root[data-theme="dracula"] .light-hidden {
-    display: block;
-}
+    /* If light */
+    :root[data-theme="light"] .dark-hidden {
+        display: block;
+    }
+
+    :root[data-theme="light"] .light-hidden {
+        display: none;
+    }
 
 
