@@ -17,12 +17,12 @@
             alt={`Cover image for ${title}`}
             />
         </figure>
-    <div class="card-body prose">
-    <h2 class="title text-3xl group-hover:text-primary">{title}</h2>
+    <div class="card-body prose px-4">
+    <h2 class="title lg:text-3xl group-hover:text-primary">{title}</h2>
     {@html marked(content).slice(0, 150)}
     <div class="flex justify-center mt-5 space-x-2">
         {#each tags as tag}
-        <span class="badge badge-outline rounded-lg py-3">{tag}</span>
+        <span class="-mt-5 md:mt-0 badge badge-outline rounded-lg py-3">{tag}</span>
         {/each}
     </div>
     <div class="justify-end card-actions">

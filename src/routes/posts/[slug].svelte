@@ -26,8 +26,8 @@
     <title>Blog | {title}</title>
   </svelte:head>
 
-<section class="max-w-[80ch] mx-auto">
-  <div class="prose prose-xl">
+<section class="container max-w-[80ch] max-w-5xl mx-auto">
+  <div class="prose prose-md lg:prose-xl">
     <h1>{title}</h1>
   </div>
   
@@ -47,7 +47,7 @@
     </div>
   </div>
   
-  <article div class="prose prose-lg">
+  <article div class="prose prose-md lg:prose-lg">
     {@html marked(content)}
   </article>
 </section>

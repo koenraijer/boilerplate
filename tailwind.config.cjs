@@ -1,8 +1,13 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: [`'Raleway'`, ...defaultTheme.fontFamily.sans,]
+			},
 			scale: {
 				'101': '1.005',
 			},
