@@ -5,7 +5,7 @@ import YoutubeIcon from "./svg/youtube-icon.svelte";
 
 </script>
 
-<footer class="items-center p-10 footer bg-neutral text-neutral-content">
+<footer class="items-center p-10 footer bg-base-200 text-base-content">
   <div class="container flex items-center max-w-7xl mx-auto justify-between ">
     <div class="items-center flex">
       <p><b>&copy; KR</b> {`${new Date().getFullYear()}`}. Thanks for visiting!</p>

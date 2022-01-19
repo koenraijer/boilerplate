@@ -29,7 +29,15 @@
     <title>About {name}</title>
   </svelte:head>
   
-  <Hero {name} {intro} {url}/>
+  <div class="prose prose-lg max-w-[80ch] mx-auto ">
+    <h1 class="font-bold mb-20 text-left text-5xl">
+      About
+    </h1>
+  </div>
+
+  <div class="container max-w-[80ch] mx-auto">
+    <Hero {name} {intro} {url}/>
+  </div>
   
   <article div class="prose prose-lg max-w-[80ch] mx-auto">
     {@html marked(bio)}

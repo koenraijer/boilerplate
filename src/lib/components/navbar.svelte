@@ -34,7 +34,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>               
           </svg>
         </div>
-        <ul tabindex="0" class="bg-neutral grid justify-items-center rounded-box shadow text-neutral-content p-2 w-52 menu dropdown-content shadow-lg">
+        <ul tabindex="0" class="bg-base-200 grid justify-items-center rounded-box shadow text-neutral-content p-2 w-52 menu dropdown-content shadow-lg">
           <a sveltekit:prefetch class="decoration-2 underline-offset-4 hover:text-primary  px-5 capitalize text-lg transition-all hover:scale-[1.10] transition-scale scale-100 duration-150 ease-bounce {($page.url.pathname === '/projects')? active : inactive}" href="/projects">
             Portfolio
           </a>

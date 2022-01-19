@@ -6,30 +6,32 @@
     export let content = ''
     export let tags = ''
     export let slug = ''
+    export let date = ''
 </script>
 
 <a href={`/posts/${slug}`} class="grid place-items-center group col-span-1">
-    <div class="card text-center max-h-xl max-w-4xl shadow-2xl mb-20 group-hover:scale-101 transition ease-in-out transform-gpu">
-        <figure class="h-40 overflow-hidden">
+    <div class="text-left max-h-xl max-w-4xl shadow-md mb-5 group-hover:scale-101 transition ease-in-out transform-gpu">
+        <figure class="h-40 w-fit overflow-hidden rounded-t-md">
             <img
-            class="object-contain w-100"
+            class="object-cover"
             src={url}
             alt={`Cover image for ${title}`}
             />
         </figure>
-    <div class="card-body prose px-4">
-    <h2 class="title lg:text-3xl group-hover:text-primary">{title}</h2>
-    {@html marked(content).slice(0, 150)}
-    <div class="flex justify-center mt-5 space-x-2">
-        {#each tags as tag}
-        <span class="-mt-5 md:mt-0 badge badge-outline rounded-lg py-3">{tag}</span>
-        {/each}
-    </div>
-    <div class="justify-end card-actions">
-        <a href={`/posts/${slug}`} class="btn btn-outline btn-primary no-underline group-hover:bg-primary-focus group-hover:border-primary-focus group-hover:text-primary-content"
-        >Read more</a
-        >
-    </div>
+    <div class="mt-5 mb-3 ml-4 mr-5 prose">
+        <div class="flex justify-left space-x-2">
+            {#each tags as tag}
+            <span class="md:mt-0 badge badge-outline rounded-lg py-3">{tag}</span>
+            {/each}
+        </div>
+        <h2 class="mt-3 mb-4 lg:text-3xl group-hover:text-primary">{title}</h2>
+        <div class="prose text-bg-neutral">{@html marked(content).slice(0, 150)}</div>
+        <div class="justify-between items-end card-actions">
+            <div class="text-neutral">{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
+            <a href={`/posts/${slug}`} class="no-underline text-bold group-hover:text-primary"
+            >Read more</a
+            >
+        </div>
     </div>
     </div>
 </a>

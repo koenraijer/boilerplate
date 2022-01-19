@@ -47,7 +47,7 @@
     </div>
   </div>
   
-  <article div class="prose prose-md lg:prose-lg">
+  <article class="prose prose-md lg:prose-lg">
     {@html marked(content)}
   </article>
 </section>

@@ -5,16 +5,23 @@
 - Use GraphCMS for form handling and add contact section (https://graphcms.com/blog/forms-and-submissions-with-nextjs-and-graphql#2-create-the-models-in-graphcms)
 - Add click to copy
 - a11ty
-- Add subtle filter in theme color over hero image
-- Maximize image width in posts
+- Add SEO component (https://blog.webjeda.com/svelte-seo/)
+- Use previed.app for phone representations of website
+- CREATE BOILERPLATE FOR FUTURE SVELTEKIT/GRAPHCMS PROJECTS
+- Add big wide featured blog post on the top
 
-**Later**
+**Future to do**
 - Search option for blogs
 - Dutch language switch for web design services 
-- Create separate landing page for web design
 
+**Small design tweaks**
+- Image width should be capped in posts
+- Content of about page should have 'max-w-screen', similar to blog posts. 
 
 ## Added
 - Revert body font to regular 'sans' stack, use Raleway for headers.
-- Thicken up hero title and add blue gradient to it.
 - Add figcaptions
+- Image width should align with text on small screens on project page. DOUBLE CHECK THIS
+- Landing page / hero for web design
+- Redesigned photo/author part on about page.
+
