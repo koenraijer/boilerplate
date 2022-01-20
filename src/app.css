@@ -37,8 +37,9 @@
         bottom: 150%;
     }
 
-    label input[type="radio"]:checked+label {
+    input[type="radio"]:checked~span {
         font-weight: 900;
+        color: hsl(var(--bc))
       }
 }
 

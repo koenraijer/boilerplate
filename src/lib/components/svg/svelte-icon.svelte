@@ -1,4 +1,4 @@
-<svg height="24" width="24" class="fill-current inline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 98.1 118" style="enable-background:new 0 0 98.1 118;" xml:space="preserve">
+<svg height="24" width="24" class="h-4 sm:h-5 md:h-6 lg:h-7 fill-current inline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 98.1 118" style="enable-background:new 0 0 98.1 118;" xml:space="preserve">
     <style type="text/css">
         .st1{fill:hsl(var(--b1));}
     </style>

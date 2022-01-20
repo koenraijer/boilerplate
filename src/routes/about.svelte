@@ -15,7 +15,7 @@
   </script>
   
   <script>
-    import Hero from '$lib/components/hero.svelte'
+    import Hero from '$lib/components/author.svelte'
     export let authors
     const {
       name,
