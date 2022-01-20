@@ -16,7 +16,8 @@
 
 **Small design tweaks**
 - Image width should be capped in posts
-- Content of about page should have 'max-w-screen', similar to blog posts. 
+- Content of about page should have 'max-w-screen', similar to blog posts.
+- Change 'accent' color on light theme to something darker. 
 
 ## Added
 - Revert body font to regular 'sans' stack, use Raleway for headers.

@@ -14,7 +14,7 @@
             <h1 class="hero-h1 pb-3 text-5xl md:text-6xl lg:text-7xl font-extrabold text-secondary">
                 {language ? "Fast, responsive, customized." : "Snel, effectief, op maat gemaakt."}
             </h1>
-            <div class="flex justify-center lg:justify-start mb-4 text-neutral ">
+            <div class="flex justify-center mx-auto max-w-screen lg:justify-start mb-4 text-neutral ">
                 <span class="text-sm md:text-lg pr-5"><SvelteIcon/> SvelteKit</span>
                 <span class="text-sm md:text-lg pr-5"><TailwindIcon/> TailwindCSS</span>
                 <span class="text-sm md:text-lg pr-5"><GraphcmsIcon/> GraphCMS</span>
