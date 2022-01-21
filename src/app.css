@@ -17,30 +17,15 @@
     figcaption {
         margin-bottom: 3rem;
     }
-
-    .tooltip:after {
+    
+    /*Removes background from DaisyUI collapse sub-divs*/
+    .collapse-open .collapse-content, .collapse:focus:not(.collapse-close) .collapse-content, .collapse:not(.collapse-close) input[type=checkbox]:checked~.collapse-content {
         background: transparent;
-        content: '';
-        display: block;  
-        position: absolute;
-        left: 50%;
-        top: -14px;
-        transform: rotate(180deg) translateX(70%);
-        width: 0;
-        height: 0;
-        border: 9px solid transparent;
-        border-bottom-color: hsl(var(--s));
-    }
-    .tooltip:before{
-        background: hsl(var(--s));
-        color: hsl(var(--b1));
-        bottom: 150%;
     }
 
-    input[type="radio"]:checked~span {
-        font-weight: 900;
-        color: hsl(var(--bc))
-      }
+    .collapse-open .collapse-title, .collapse:focus:not(.collapse-close) .collapse-title, .collapse:not(.collapse-close) input[type=checkbox]:checked~.collapse-title {
+        background: transparent;
+    }
 }
 
 @layer utilities {

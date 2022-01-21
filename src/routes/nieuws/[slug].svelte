@@ -26,7 +26,7 @@
     <title>{title} | {$seo.title} </title>
   </svelte:head>
 
-<section class="container max-w-[80ch] max-w-5xl mx-auto">
+<section class="max-w-[80ch] max-w-5xl mx-auto">
   <div class="prose prose-md lg:prose-xl">
     <h1>{title}</h1>
   </div>

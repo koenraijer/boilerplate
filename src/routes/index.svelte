@@ -48,16 +48,61 @@
     <title>Home | {$seo.title} </title>
 </svelte:head>
 
-<div class="card"></div>
-
-<div class="card mb-5 shadow-md md:max-w-md lg:mx-auto lg:card-side bg-warning text-lg text-neutral-content">
-    <div class="py-5 card-body">
-      <p class="">{@html marked(alerts[0].content)}</p> 
-    </div>
-  </div> 
-  
+<div class="alert alert-info mb-10 md:max-w-lg md:ml-0 lg:mr-auto">
+<div class="flex-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 mx-2 stroke-current">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>                          
+    </svg> 
+    <p class="">{@html marked(alerts[0].content)}</p> 
+</div>
+</div>
 
 <Hero/>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
+    <div class="card shadow-2xl lg:card-side bg-primary text-primary-content">
+        <div class="card-body">
+          <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos.</p> 
+          <div class="justify-end card-actions">
+            <button class="btn btn-primary">
+                  More info
+                  
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 ml-2 stroke-current">  
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>                        
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card shadow-2xl lg:card-side bg-secondary text-secondary-content">
+        <div class="card-body">
+          <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos.</p> 
+          <div class="justify-end card-actions">
+            <button class="btn btn-secondary">
+                  More info
+                  
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 ml-2 stroke-current">  
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>                        
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card shadow-2xl lg:card-side bg-accent text-accent-content">
+        <div class="card-body">
+          <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos.</p> 
+          <div class="justify-end card-actions">
+            <button class="btn btn-accent">
+                  More info
+                  
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 ml-2 stroke-current">  
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>                        
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+</div>
 
 <h1 class="font-bold text-lef mb-10 text-4xl">Latest posts</h1>
 
