@@ -42,21 +42,6 @@
     $: console.log(language);
 </script>
 
-<svelte:head>
-    <title>Koen Raijer | Personal website, blog and portfolio.</title>
-</svelte:head>
-
-<div class="btn-group">
-    <label class="cursor-pointer text-md px-2">
-        <input type="radio" value={true} bind:group={language} name="languages" id="english" class="hidden">
-        <span class="text-neutral">EN</span>
-    </label>|
-    <label class="cursor-pointer text-md px-2">
-        <input type="radio" value={false} bind:group={language} name="languages" id="dutch" data-title="NL" class="hidden"> 
-        <span class="text-neutral">NL</span>
-    </label>
-</div>
-
 <Hero {language}/>
 
 <h1 class="font-bold text-lef mb-10 text-4xl">Latest posts</h1>

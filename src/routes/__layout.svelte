@@ -1,14 +1,13 @@
 <script context="module">
 	export const load = ({ url }) => {
 	  const currentRoute = url.pathname
-  
+
 	  return {
 		props: {
-		  currentRoute
+		  currentRoute,
 		}
 	  }
 	}
-
 </script>
 
 <script>
@@ -19,17 +18,28 @@
 	import '../app.css'
 	import {fade} from 'svelte/transition'
 
+	// SEO Store
+	import {seo} from '../stores.js'
+
 	export let currentRoute; 
 
 	onMount(async () => {
 	  themeChange(false)
 	})
+
 </script>
   
-  <Navbar />
+<svelte:head>
+  <title>{$seo.title}</title>
+  <meta name="description" content="{$seo.description}">
+</svelte:head>
+
+<Navbar />
+
 {#key currentRoute}
   <main class="container max-w-7xl mx-auto px-4 mb-20 flex flex-col min-h-screen overflow-x-hidden" in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
 	<slot />
   </main>
 {/key}
-  <Footer />
+
+<Footer />
