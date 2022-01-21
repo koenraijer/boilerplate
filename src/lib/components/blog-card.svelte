@@ -5,9 +5,13 @@
     export let content = ''
     export let tags = ''
     export let slug = ''
+    export let date = ''
+
+    // Change this depending on name of 'blog' folder
+    let postLink = "nieuws";
 </script>
 
-<a href={`/posts/${slug}`} class="grid place-items-center group col-span-1">
+<a href={`/${postLink}/${slug}`} class="grid place-items-center group col-span-1">
     <div class="card text-center max-h-xl max-w-4xl shadow-lg mb-10 group-hover:scale-101 transition ease-in-out transform-gpu">
         <figure class="h-40 overflow-hidden">
             <img
@@ -24,7 +28,8 @@
         <span class="badge badge-outline rounded-lg py-3">{tag}</span>
         {/each}
     </div>
-    <div class="justify-end card-actions">
+    <div class="justify-between items-end card-actions">
+        <div class="text-neutral">{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
         <a href={`/posts/${slug}`} class="btn btn-outline btn-primary no-underline group-hover:bg-primary-focus group-hover:border-primary-focus group-hover:text-primary-content"
         >Read more</a
         >

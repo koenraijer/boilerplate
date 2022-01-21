@@ -2,7 +2,7 @@
     import ProjectCard from '$lib/components/project-card.svelte'
     import { client } from '$lib/graphql-client'
     import { projectsQuery } from '$lib/graphql-queries'
-  
+
     export const load = async () => {
       const { projects } = await client.request(projectsQuery)
   
@@ -15,15 +15,17 @@
   </script>
   
   <script>
-    export let projects
+    import {seo} from '@lib/stores.js'
+    export let projects;
+
   </script>
   
   <svelte:head>
-    <title>Projects | Koen Raijer</title>
+    <title>Diensten | {$seo.title}</title>
   </svelte:head>
-  
+
   <h1 class="font-bold mb-20 text-left text-5xl">
-    Projects
+    Diensten
   </h1>
   
   <div

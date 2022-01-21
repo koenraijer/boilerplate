@@ -16,7 +16,7 @@
   
   <script>
     import Author from '$lib/components/author.svelte'
-    import {seo} from "../stores.js"
+    import {seo} from '@lib/stores.js'
     export let authors
 
     const {
@@ -26,16 +26,17 @@
       picture: { url },
     } = authors[0]
 
-    $seo = {
-      title: "Over " + authors[0].name,
-      description: "Meer informatie over ons."
-    }
-
   </script>
   
+
+<svelte:head>
+  <title>Over {authors[0].name} | {$seo.title} </title>
+<meta name="description" content="Over {authors[0].name}. {$seo.description}"> 
+</svelte:head>
+
   <div class="prose prose-lg max-w-[80ch] mx-auto ">
     <h1 class="font-bold mb-20 text-left text-5xl">
-      Over John Doe
+      Over {authors[0].name}
     </h1>
   </div>
 

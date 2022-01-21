@@ -18,12 +18,12 @@
   
   <script>
     export let post
-  
+    import {seo} from '@lib/stores.js'
     const { title, date, tags, content, coverImage } = post
   </script>
   
   <svelte:head>
-    <title>{title} | Koen Raijer</title>
+    <title>{title} | {$seo.title} </title>
   </svelte:head>
 
 <section class="container max-w-[80ch] max-w-5xl mx-auto">

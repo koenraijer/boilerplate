@@ -15,11 +15,12 @@
 </script>
 
 <script>
+  import {seo} from '@lib/stores.js'
   export let project
 </script>
 
 <svelte:head>
-<title>Koen codes | {project.name}</title>
+<title>{project.name} | {$seo.title} </title>
 </svelte:head>
 
 <div class="max-w-[80ch] mx-auto">

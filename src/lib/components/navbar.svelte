@@ -2,9 +2,10 @@
     import ThemeSelect from './theme-select.svelte'
     import { page } from '$app/stores';
 
+    export let url = '';
+
     let active = "text-secondary"
     let inactive = "text-base-content"
-
     
   </script>
   <div
@@ -12,7 +13,7 @@
   >
     <div class="container flex items-center justify-between max-w-7xl mx-auto">
       <div class="flex-1 pl-4 pr-2 lg:pr-4">
-        <a class="text-xl tracking-wide" href="/">Boilerplate</a>
+        <img src={url} class="w-6 h-6 inline mr-3 transform -translate-y-1" alt="website logo"><a class="text-xl tracking-wide" href="/">Boilerplate</a>
       </div>
     
       <div class="flex items-center justify-between lg:hidden">

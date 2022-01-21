@@ -8,7 +8,7 @@
             <h1 class="hero-h1 pb-3 mx-auto text-5xl md:text-6xl lg:text-7xl font-extrabold text-secondary">
                 Welkom bij Boilerplate
             </h1>
-            <p class="mb-5 lg:text-left text-center prose-xl max-w-xl mx-auto lg:mx-0">
+            <p class="mb-5 lg:text-left text-center prose-xl max-w-xl mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem.
             </p> 
             <a href="/contact" class="btn ml-5 btn-primary  text-base text-base-100">Contact
             </a>

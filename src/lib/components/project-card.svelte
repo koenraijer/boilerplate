@@ -6,7 +6,7 @@
   export let type = ''
 </script>
 
-<a href={`/projects/${slug}`} class="group block">
+<a href={`/diensten/${slug}`} class="group block">
 <div class="relative group card shadow-2xl col-span-1 group-hover:scale-101 transition ease-in-out transform-gpu">
   <img src={url} alt={name} class="object-contain" />
     <div

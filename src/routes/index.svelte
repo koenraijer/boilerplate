@@ -9,10 +9,10 @@
     import {client} from '$lib/graphql-client'
     import { authorsQuery, postsQuery } from '$lib/graphql-queries'
 
-    export const load = async () => {        
+    export const load = async() => {        
 
         // 2. Give that query to the GraphQL client.
-        const [authorsReq, postsReq] = await Promise.all([
+        const [authorsReq, postsReq, metadataReq] = await Promise.all([
             client.request(authorsQuery),
             client.request(postsQuery),
         ])
@@ -25,6 +25,7 @@
             props: {
                 authors,
                 posts,
+                
             },
         }
     }  
@@ -33,16 +34,18 @@
 <script>
     import {marked} from 'marked'
     import {page} from '$app/stores'
+	import {seo} from '@lib/stores.js'
     // 4. Export the data for use in the page
     export let authors
     export let posts
 
-    let language = true; // True is equal to English 
-
-    $: console.log(language);
 </script>
+<svelte:head>
+    <title>Home | {$seo.title} </title>
+	<meta name="description" content="Homepage. {$seo.description}"> 
+</svelte:head>
 
-<Hero {language}/>
+<Hero/>
 
 <h1 class="font-bold text-lef mb-10 text-4xl">Latest posts</h1>
 
