@@ -82,18 +82,26 @@ export const postQuery = gql`
 `
 
 export const metadataQuery = gql`
-    query getprojectMetadatas {
-      projectMetadatas {
-        id
-        name
-        siteUrl
-        description
-        openGraphDefaultImage {
-          url
-        }
-        logoImage {
-          url
-        }
+  query getprojectMetadatas {
+    projectMetadatas {
+      id
+      name
+      siteUrl
+      description
+      openGraphDefaultImage {
+        url
+      }
+      logoImage {
+        url
       }
     }
+  }
+`
+
+export const alertsQuery = gql`
+  query GetAlerts {
+    alerts {
+      content
+    }
+  }
 `

@@ -7,25 +7,27 @@
         - the client takes our query and returns data inside of a const.
     */
     import {client} from '$lib/graphql-client'
-    import { authorsQuery, postsQuery } from '$lib/graphql-queries'
+    import { authorsQuery, postsQuery, alertsQuery } from '$lib/graphql-queries'
 
     export const load = async() => {        
 
         // 2. Give that query to the GraphQL client.
-        const [authorsReq, postsReq, metadataReq] = await Promise.all([
+        const [authorsReq, postsReq, alertsReq] = await Promise.all([
             client.request(authorsQuery),
             client.request(postsQuery),
+            client.request(alertsQuery)
         ])
 
         const {authors} = authorsReq
         const {posts} = postsReq
+        const {alerts} = alertsReq
 
         // 3. Return that data to the <script> tag
         return {
             props: {
                 authors,
                 posts,
-                
+                alerts,
             },
         }
     }  
@@ -35,15 +37,25 @@
     import {marked} from 'marked'
     import {page} from '$app/stores'
 	import {seo} from '@lib/stores.js'
-    // 4. Export the data for use in the page
+
     export let authors
     export let posts
+    export let alerts
 
 </script>
+
 <svelte:head>
     <title>Home | {$seo.title} </title>
-	<meta name="description" content="Homepage. {$seo.description}"> 
 </svelte:head>
+
+<div class="card"></div>
+
+<div class="card mb-5 shadow-md md:max-w-md lg:mx-auto lg:card-side bg-warning text-lg text-neutral-content">
+    <div class="py-5 card-body">
+      <p class="">{@html marked(alerts[0].content)}</p> 
+    </div>
+  </div> 
+  
 
 <Hero/>
 

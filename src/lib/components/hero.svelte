@@ -5,45 +5,49 @@
 <div class="grid mb-10 sm:mb-16 lg:mb-20 mx-auto py-5">
     <div class="grid grid-cols-1 lg:grid-cols-3 text-center lg:text-left max-w-screen sm:max-w-5xl">
         <div class="relative col-span-1 lg:col-span-2">
-            <h1 class="hero-h1 pb-3 mx-auto text-5xl md:text-6xl lg:text-7xl font-extrabold text-secondary">
+            <h1 class="hero-h1 pb-3 text-5xl md:text-6xl lg:text-7xl font-extrabold text-secondary">
                 Welkom bij Boilerplate
             </h1>
             <p class="mb-5 lg:text-left text-center prose-xl max-w-xl mx-auto lg:mx-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem.
             </p> 
-            <a href="/contact" class="btn ml-5 btn-primary  text-base text-base-100">Contact
+            <a href="/contact" class="btn ml-5 btn-primary text-base text-base-100">Contact
             </a>
         </div>
 
-        <div class="col-span-1 mx-auto">
-            <table class="block sm:hidden lg:block text-xl">
+        <div class="card m-5 bg-base-200 col-span-1 mx-auto">
+            <table class="card-body block sm:hidden lg:block text-xl">
                 <tr>
-                    <td class="text-accent text-3xl"><Checkmark/></td>
-                    <td>Zondag
+                    <td class="">Maandag</td>
+                    <td>9:00-17:00
                     </td>
                 </tr>
                 <tr>
-                    <td class="text-accent text-3xl"><Checkmark/></td>
-                    <td>Maandag</td>
+                    <td class="">Dinsdag</td>
+                    <td>9:00-17:00</td>
                 </tr>
                 <tr>
-                    <td class="text-accent text-3xl"><Checkmark/></td>
-                    <td>Dinsdag
+                    <td class="">Woensdag</td>
+                    <td>9:00-17:00
                         </td>
                 </tr>
                 <tr>
-                    <td class="text-accent text-3xl"><Checkmark/></td>
-                    <td>Woensdag
+                    <td class="">Donderdag</td>
+                    <td>9:00-18:00
                         
                     </td>
                 </tr>
                 <tr>
-                    <td class="text-accent text-3xl"><Checkmark/></td>
-                    <td>Woensdag
+                    <td class="">Vrijdag</td>
+                    <td>9:00-18:00
                     </td>
                 </tr>
                 <tr>
-                    <td class="text-accent text-3xl"><Checkmark/></td>
-                    <td>Donderdag</td>
+                    <td class="">Zaterdag</td>
+                    <td>11:00-17:00</td>
+                </tr>
+                <tr>
+                    <td class="">Zondag</td>
+                    <td>Gesloten</td>
                 </tr>
             </table>
             <div class="hidden sm:flex flex-row lg:hidden">

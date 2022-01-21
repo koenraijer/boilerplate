@@ -9,7 +9,7 @@
     
   </script>
   <div
-    class="md:py-3 lg:py-5 mb-16 py-3 shadow-sm bg-base-100 sticky top-0 z-10"
+    class="md:py-3 lg:py-5 mb-10 py-3 shadow-sm bg-base-100 sticky top-0 z-10"
   >
     <div class="container flex items-center justify-between max-w-7xl mx-auto">
       <div class="flex-1 pl-4 pr-2 lg:pr-4">
