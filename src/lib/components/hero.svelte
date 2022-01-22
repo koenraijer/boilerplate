@@ -4,7 +4,7 @@
 </script>
 <div class="grid mb-20 mx-auto py-5">
 
-    <div class="grid grid-cols-1 md:grid-cols-3 text-center content-start lg:text-left max-w-screen sm:max-w-5xl">
+    <div class="grid grid-cols-1 md:grid-cols-3 text-center content-start lg:text-left md:mr-auto gap-x-10 md:ml-10">
         <!--Left column with hero-->
         <div class="relative mb-5 col-span-1 md:col-span-2">
             <h1 class="hero-h1 pb-3 text-5xl md:text-6xl lg:text-7xl font-extrabold text-secondary">
@@ -15,8 +15,8 @@
         </div>
 
         <!--Right column with opening hours and contact info-->
-        <div class="transform md:translate-x-5">
-            <div class="card collapse collapse-arrow bg-base-200 shadow-lg p-1 mt-5 sm:max-w-5xl h-auto col-span-1 mx-auto">
+        <div class="">
+            <div class="card collapse w-full collapse-arrow bg-base-200 shadow-lg col-span-1">
                 <input type="checkbox"> 
                 <div class="collapse-title text-left text-xl font-medium">
                 Openingstijden

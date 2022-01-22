@@ -60,12 +60,12 @@
 <Hero/>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
-    <div class="card shadow-2xl lg:card-side bg-primary text-primary-content">
+    <div class="card shadow-lg lg:card-side bg-primary-focus text-white">
         <div class="card-body">
           <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos.</p> 
           <div class="justify-end card-actions">
-            <button class="btn btn-primary">
-                  More info
+            <button class="btn btn-primary text-white">
+                  Meer informatie
                   
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 ml-2 stroke-current">  
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>                        
@@ -74,12 +74,12 @@
           </div>
         </div>
       </div>
-      <div class="card shadow-2xl lg:card-side bg-secondary text-secondary-content">
+      <div class="card shadow-lg lg:card-side bg-secondary-focus text-white">
         <div class="card-body">
           <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos.</p> 
           <div class="justify-end card-actions">
-            <button class="btn btn-secondary">
-                  More info
+            <button class="btn btn-secondary text-white">
+                  Meer informatie
                   
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 ml-2 stroke-current">  
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>                        
@@ -88,12 +88,12 @@
           </div>
         </div>
       </div>
-      <div class="card shadow-2xl lg:card-side bg-accent text-accent-content">
+      <div class="card shadow-lg lg:card-side bg-accent-focus text-accent-content">
         <div class="card-body">
           <p>Rerum reiciendis beatae tenetur excepturi aut pariatur est eos.</p> 
           <div class="justify-end card-actions">
             <button class="btn btn-accent">
-                  More info
+                  Meer informatie
                   
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 ml-2 stroke-current">  
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>                        
@@ -104,7 +104,7 @@
       </div>
 </div>
 
-<h1 class="font-bold text-lef mb-10 text-4xl">Latest posts</h1>
+<h1 class="font-bold text-lef mb-10 text-4xl">Laatste nieuws</h1>
 
 <div class="grid lg:first:grid-cols-2 gap-10 py-10 md:grid-cols-1 md:px-10 lg:grid-cols-2">
     {#each posts as { title, slug, content, coverImage, tags, date }}

@@ -8,3 +8,5 @@ This boilerplate uses SvelteKit, TailwindCSS, DaisyUI and Vercel.
 ## Features:
 - Easy to use SEO integration by employing Svelte Stores and API query. Custom titles and descriptions, specific SEO for Facebook and Twitter.
 - Optional alert box to notify customers of something urgent like new opening hours. 
+
+
