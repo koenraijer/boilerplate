@@ -17,7 +17,6 @@
             client.request(alertsQuery)
         ])
 
-        const {authors} = authorsReq
         const {posts} = postsReq
         const {alerts} = alertsReq
 
