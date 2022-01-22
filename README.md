@@ -4,6 +4,7 @@ This boilerplate uses SvelteKit, TailwindCSS, DaisyUI and Vercel.
 ## TO DO:
 - Add all relevant social media icons
 - Add contact section
+- Add image optimalization
 
 ## Features:
 - Easy to use SEO integration by employing Svelte Stores and API query. Custom titles and descriptions, specific SEO for Facebook and Twitter.
