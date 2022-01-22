@@ -86,7 +86,6 @@ export const metadataQuery = gql`
     projectMetadatas {
       id
       name
-      siteUrl
       description
       openGraphDefaultImage {
         url
