@@ -30,7 +30,7 @@
     </div>
     <div class="justify-between items-end card-actions">
         <div class="text-neutral">{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
-        <a href={`/posts/${slug}`} class="btn btn-outline btn-primary no-underline group-hover:bg-primary-focus group-hover:border-primary-focus group-hover:text-primary-content"
+        <a href={`/${postLink}/${slug}`} class="btn btn-outline btn-primary no-underline group-hover:bg-primary-focus group-hover:border-primary-focus group-hover:text-primary-content"
         >Read more</a
         >
     </div>
