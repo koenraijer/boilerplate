@@ -7,13 +7,12 @@
         - the client takes our query and returns data inside of a const.
     */
     import {client} from '$lib/graphql-client'
-    import { authorsQuery, postsQuery, alertsQuery } from '$lib/graphql-queries'
+    import { postsQuery, alertsQuery } from '$lib/graphql-queries'
 
     export const load = async() => {        
 
         // 2. Give that query to the GraphQL client.
-        const [authorsReq, postsReq, alertsReq] = await Promise.all([
-            client.request(authorsQuery),
+        const [postsReq, alertsReq] = await Promise.all([
             client.request(postsQuery),
             client.request(alertsQuery)
         ])
@@ -25,7 +24,6 @@
         // 3. Return that data to the <script> tag
         return {
             props: {
-                authors,
                 posts,
                 alerts,
             },
@@ -35,10 +33,8 @@
 
 <script>
     import {marked} from 'marked'
-    import {page} from '$app/stores'
 	import {seo} from '@lib/stores.js'
 
-    export let authors
     export let posts
     export let alerts
 
