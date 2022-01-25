@@ -28,6 +28,10 @@
         background: transparent;
         color: inherit;
     }
+
+    .collapse-arrow .collapse-title:after {
+        background: inherit;
+    }
 }
 
 @layer utilities {
