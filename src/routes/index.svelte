@@ -66,10 +66,10 @@
         </div>
 
         <div class="lg:max-w-lg md:max-w-sm flex justify-center flex-col">
-          <h2 class="text-6xl font-extrabold tracking-tight text-base-content mb-1">
+          <h2 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-base-content mb-1">
             At Boilerplate,
           </h2>
-          <h2 class="text-6xl font-extrabold tracking-tight text-primary mb-6" >
+          <h2 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-primary mb-6" >
             we help you grow.
           </h2>
           <p class="lg:pr-12 lg:mr-12 text-xl font-normal text-neutral mt-1 mb-4">
@@ -92,7 +92,7 @@
   <div class="grid grid-cols-1 md:grid-cols-3 content-start md:mr-auto gap-x-10">
       <!--Left column with hero-->
       <div class="relative mb-5 col-span-1">
-        <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+        <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-base-content sm:text-4xl md:mx-auto">
           Praktische zaken
         </h2>
           <p class="mb-5 prose-xl max-w-xl mx-auto lg:mx-0">Altijd snel de openingstijden en contactgegevens bij de hand!
