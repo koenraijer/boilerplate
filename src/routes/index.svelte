@@ -87,7 +87,7 @@
 
 </section>
 
-<div class="grid mb-10 mx-auto py-5">
+<div class="grid mb-10 mx-auto py-5 md:pt-5 pt-14">
 
   <div class="grid grid-cols-1 md:grid-cols-3 content-start md:mr-auto gap-x-10">
       <!--Left column with hero-->
